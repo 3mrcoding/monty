@@ -5,6 +5,7 @@
  * @stack: no
  * @s: no
  * @x: no
+ * Return: int
  */
 
 int _include(stack_t **stack, char **s, int x)
