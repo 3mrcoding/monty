@@ -1,0 +1,31 @@
+#include "monty.h"
+
+
+
+
+char **open_file(char *argv[])
+{
+    char **lines;
+    char line[MAX_LINE_LENGTH];
+    int i = 0;
+
+    FILE *file = fopen(argv[1], "r");
+    if (file == NULL)
+	{
+        printf("Error: Can't open file %s\n", argv[1]);
+        exit(EXIT_FAILURE);
+    }
+
+    lines = malloc(MAX_LINES * sizeof(char *));
+
+    while (fgets(line, sizeof(line), file))
+	{
+        lines[i] = malloc(strlen(line) + 1);
+        strcpy(lines[i], line);
+        i++;
+    }
+
+    fclose(file);
+
+    return lines;
+}
