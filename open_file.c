@@ -6,7 +6,7 @@
 char **open_file(char *argv[])
 {
     char **lines;
-    char line[MAX_LINE_LENGTH];
+    char line[1024];
     int i = 0;
 
     FILE *file = fopen(argv[1], "r");
@@ -16,7 +16,7 @@ char **open_file(char *argv[])
         exit(EXIT_FAILURE);
     }
 
-    lines = malloc(MAX_LINES * sizeof(char *));
+    lines = malloc(1024 * sizeof(char *));
 
     while (fgets(line, sizeof(line), file))
 	{
