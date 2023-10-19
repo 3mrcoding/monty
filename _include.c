@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * _include - function that executes a command line
+ * @stack: no
+ * @s: no
+ * @x: no
+ */
+
 int _include(stack_t **stack, char **s, int x)
 {
     int y = 0;
