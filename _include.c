@@ -7,13 +7,13 @@ int _include(stack_t **stack, char **s, int x)
     instruction_t commands[] = {
 		{"push", &push_s},
 		{"pall", &pall},
-        {NULL, NULL}
+        {"NULL", NULL}
 	};
-    
     for(i = 0; commands[i].opcode != NULL; i++)
     {
         if(strcmp(commands[i].opcode, s[0]) == 0)
         {
+
             if (strcmp(s[0], "pall") == 0)
             {
                 commands[i].f(stack, y);
