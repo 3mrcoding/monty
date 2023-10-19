@@ -10,3 +10,4 @@ void pall(__attribute__((unused)) stack_t **stack, __attribute__((unused)) unsig
         p = p->next;
     }
 }
+

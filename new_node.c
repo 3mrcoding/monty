@@ -8,3 +8,4 @@ stack_t *new_node(int x)
     new_node -> next = NULL;
     return new_node;
 }
+
