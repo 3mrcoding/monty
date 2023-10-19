@@ -27,7 +27,7 @@ int _include(stack_t **stack, char **s, int x)
         }
         else if(strcmp(commands[i].opcode, "NULL") == 0)
         {
-            printf("L%i: unknown instruction %s\n", x, s[0]);
+            fprintf(stderr, "L%i: unknown instruction %s\n", x, s[0]);
             exit(EXIT_FAILURE);
         }
     }
