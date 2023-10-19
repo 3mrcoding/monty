@@ -4,7 +4,7 @@
  * get_token - return tokanized string
  * @s: string from getline
  * @d: delemitir
- * Return: array of pointers to pointers
+ * Return: array of pointers to pointerss
 */
 char **get_token(char *s, char *d)
 {
