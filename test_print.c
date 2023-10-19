@@ -7,4 +7,3 @@ void print_test(char **f)
     for (i = 0; f[i] != 0; i++)
         printf("%s\n", f[i]);
 }
-

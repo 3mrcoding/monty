@@ -14,4 +14,3 @@ void _free(int count, ...)
 		free(va_arg(countptr, char *));
 	va_end(countptr);
 }
-

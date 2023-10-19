@@ -17,4 +17,3 @@ void push_s(stack_t **stack, unsigned int ln)
         *stack = ptr;
     }
 }
-

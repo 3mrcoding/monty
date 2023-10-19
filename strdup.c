@@ -25,4 +25,3 @@ char *_strdup(char *str)
 	return (array);
 
 }
-

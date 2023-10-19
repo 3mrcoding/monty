@@ -26,4 +26,3 @@ int main(int argc, char *argv[])
     _free(1, lines);
     return (0);
 }
-

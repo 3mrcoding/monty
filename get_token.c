@@ -33,4 +33,3 @@ char **get_token(char *s, char *d)
 	free(str);
 	return (tokens);
 }
-
