@@ -15,6 +15,8 @@ int _include(stack_t **stack, char **s, int x)
 	instruction_t commands[] = {
 		{"push", &push_s},
 		{"pall", &pall},
+		{"pint", &pint},
+		{"pop", &pop},
 		{"NULL", NULL}
 	};
 	for (i = 0; commands[i].opcode != NULL; i++)
