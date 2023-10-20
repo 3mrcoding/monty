@@ -7,7 +7,7 @@
  * Return: array of pointers to pointerss
 */
 
-void push_s(stack_t **stack, unsigned int ln)
+void push_s(stack_t **stack, __attribute__((unused)) unsigned int ln)
 {
 	stack_t *ptr = malloc(sizeof(stack_t));
 

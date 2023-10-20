@@ -10,29 +10,24 @@
 
 int _include(stack_t **stack, char **s, int x)
 {
-	int y = 0;
 	int i;
 	instruction_t commands[] = {
 		{"push", &push_s},
 		{"pall", &pall},
 		{"pint", &pint},
 		{"pop", &pop},
+		{"swap", &swap},
+		{"add", &add},
+		{"nop", &nop},
 		{"NULL", NULL}
 	};
 	for (i = 0; commands[i].opcode != NULL; i++)
 	{
 		if (strcmp(commands[i].opcode, s[0]) == 0)
 		{
-
-			if (strcmp(s[0], "pall") == 0)
-			{
-				commands[i].f(stack, y);
-			}
-			else
-			{
-				y = atoi(s[1]);
-				commands[i].f(stack, y);
-			}
+			commands[i].f(stack, x);
+			if (strcmp(commands[i].opcode, "push") == 0)
+				(*stack)->n = atoi(s[1]);
 			break;
 		}
 		else if (strcmp(commands[i].opcode, "NULL") == 0)
