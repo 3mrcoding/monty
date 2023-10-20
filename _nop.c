@@ -3,12 +3,12 @@
 /**
  * nop - return tokanized string
  * @stack: string from getline
- * @ln: delemitir
+ * @line_number: delemitir
  * Return: array of pointers to pointerss
 */
 
-void nop(stack_t **stack, unsigned int ln)
+void nop(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
-	(void)ln;
+	(void)line_number;
 }

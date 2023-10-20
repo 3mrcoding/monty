@@ -3,19 +3,19 @@
 /**
  * swap - return tokanized string
  * @stack: string from getline
- * @ln: delemitir
+ * @line_number: delemitir
  * Return: array of pointers to pointerss
 */
 
 
-void swap(stack_t **stack, unsigned int ln)
+void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *ptr, *tmp;
 
 	ptr = *stack;
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", ln);
+		fprintf(stderr, "L%d: can't swap, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	if ((*stack)->next->next == NULL)

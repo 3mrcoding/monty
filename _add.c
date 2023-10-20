@@ -1,20 +1,20 @@
 #include "monty.h"
 
 /**
- * pint - return tokanized string
+ * add - return tokanized string
  * @stack: string from getline
- * @ln: delemitir
+ * @line_number: delemitir
  * Return: array of pointers to pointerss
 */
 
-void add(stack_t **stack, unsigned int ln)
+void add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *ptr, *tmp, *p;
 
 	ptr = *stack;
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", ln);
+		fprintf(stderr, "L%d: can't add, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 	ptr = (*stack)->next;

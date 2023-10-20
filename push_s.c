@@ -3,16 +3,16 @@
 /**
  * push_s - return tokanized string
  * @stack: string from getline
- * @ln: delemitir
+ * @line_number: delemitir
  * Return: array of pointers to pointerss
 */
 
-void push_s(stack_t **stack, __attribute__((unused)) unsigned int ln)
+void push_s(stack_t **stack, unsigned int line_number)
 {
 	stack_t *ptr = malloc(sizeof(stack_t));
 
 	ptr->next = NULL;
-	ptr->n = ln;
+	ptr->n = line_number;
 	ptr->prev = NULL;
 
 	if (*stack == NULL)

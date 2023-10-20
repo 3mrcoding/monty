@@ -46,14 +46,14 @@ char *_strdup(char *str);
 void print_test(char **f);
 int _include(stack_t **stack, char **s, int x);
 stack_t *new_node(int x);
-void push_s(stack_t **stack, unsigned int ln);
-void pall(stack_t **stack, unsigned int ln);
+void push_s(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack, unsigned int line_number);
 void _free(int count, ...);
-void pint(stack_t **stack, unsigned int ln);
-void pop(stack_t **stack, unsigned int ln);
-void swap(stack_t **stack, unsigned int ln);
-void add(stack_t **stack, unsigned int ln);
-void nop(stack_t **stack, unsigned int ln);
+void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 
 
 
