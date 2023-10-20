@@ -36,11 +36,11 @@ int _include(stack_t **stack, char **s, int x)
 				(*stack)->n = atoi(s[1]);
 				break;
 			}
-			else if (strcmp(commands[i].opcode, "NULL") == 0)
-			{
-				fprintf(stderr, "L%d: unknown instruction %s\n", x, s[0]);
-				exit(EXIT_FAILURE);
-			}
+		}
+		else if (strcmp(commands[i].opcode, "NULL") == 0)
+		{
+			fprintf(stderr, "L%d: unknown instruction %s\n", x, s[0]);
+			exit(EXIT_FAILURE);
 		}
 	}
 	return (0);
