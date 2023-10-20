@@ -34,8 +34,8 @@ int _include(stack_t **stack, char **s, int x)
 					exit(EXIT_FAILURE);
 				}
 				(*stack)->n = atoi(s[1]);
-				break;
 			}
+			break;
 		}
 		else if (strcmp(commands[i].opcode, "NULL") == 0)
 		{
