@@ -20,7 +20,7 @@ char **open_file(char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	lines = malloc(1024 * sizeof(char *));
+	lines = malloc(6000 * sizeof(char *));
 
 	while (fgets(line, sizeof(line), file))
 	{
