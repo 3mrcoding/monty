@@ -27,9 +27,10 @@ int main(int argc, char *argv[])
 		tokens = get_token(lines[i], d);
 		if (tokens[0] == NULL)
 			continue;
-		_include(&stack, tokens, (i + 1));
-		_free(1, tokens);
+		_include(&stack, lines, tokens, (i + 1));
+		_freee(tokens);
 	}
-	_free(1, lines);
+	_freee(lines);
+	freeList(&stack);
 	return (0);
 }

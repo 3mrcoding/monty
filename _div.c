@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * div - return tokanized string
+ * _div - return tokanized string
  * @stack: string from getline
  * @line_number: delemitir
  * Return: array of pointers to pointerss

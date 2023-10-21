@@ -28,6 +28,7 @@ char **open_file(char *argv[])
 		strcpy(lines[i], line);
 		i++;
 	}
+	lines[i] = NULL;
 
 	fclose(file);
 

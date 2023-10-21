@@ -45,11 +45,11 @@ char **open_file(char *argv[]);
 char **get_token(char *s, char *d);
 char *_strdup(char *str);
 void print_test(char **f);
-int _include(stack_t **stack, char **s, int x);
+int _include(stack_t **stack,char **m, char **s, int x);
 stack_t *new_node(int x);
 void push_s(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
-void _free(int count, ...);
+
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
@@ -61,7 +61,8 @@ void _div(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
-
+void freeList(stack_t **stack);
+void _freee(char **s);
 int isNumber(char number[]);
 
 
