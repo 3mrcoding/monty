@@ -19,10 +19,7 @@ void sub(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	ptr = (*stack)->next;
-	if ((*stack)->n > ptr->n)
-		num = ((*stack)->n - ptr->n);
-	else
-		num = (ptr->n - (*stack)->n);
+	num = (ptr->n - (*stack)->n);
 	p = (*stack);
 	*stack = ptr;
 	free(p);

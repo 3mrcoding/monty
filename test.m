@@ -1,3 +1,4 @@
 push 98
-rotl Holberton
+push 402
+sub Holberton
 pall
