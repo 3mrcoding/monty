@@ -42,6 +42,8 @@ int _include(stack_t **stack, char **m, char **s, int x)
 						freeList(stack);
 						exit(EXIT_FAILURE); }
 					(*stack)->n = atoi(s[j]); }
+					if (strcmp(s[j], commands->opcode) != 0)
+						j++;
 				break; } } }
 	return (0);
 }
