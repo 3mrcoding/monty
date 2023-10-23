@@ -11,10 +11,10 @@ int _include(stack_t **stack, char **m, char **s, int x)
 {
 	int i, j;
 	instruction_t commands[] = {
-		{"push", &push_s}, {"pall", &pall}, {"pint", &pint},
-		{"pop", &pop}, {"swap", &swap}, {"add", &add},
-		{"nop", &nop}, {"sub", &sub}, {"div", &_div},
-		{"rotl", &rotl}, {"mul", &mul}, {"mod", &mod}, {"NULL", NULL}
+		{"pstr", &pstr}, {"push", &push_s}, {"pall", &pall}, {"pint", &pint},
+		{"pchar", &pchar}, {"pop", &pop}, {"swap", &swap}, {"add", &add},
+		{"nop", &nop}, {"sub", &sub}, {"div", &_div}, {"rotl", &rotl},
+		{"rotr", &rotr}, {"mul", &mul}, {"mod", &mod}, {"NULL", NULL}
 	};
 
 	for (j = 0; s[j] != NULL; j++)

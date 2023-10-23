@@ -30,6 +30,11 @@ int main(int argc, char *argv[])
 			_freee(tokens);
 			continue;
 		}
+		else if (**tokens == '#')
+		{
+			_freee(tokens);
+			continue;
+		}
 		_include(&stack, lines, tokens, (i + 1));
 		_freee(tokens);
 	}
